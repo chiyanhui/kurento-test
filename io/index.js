@@ -1,4 +1,4 @@
-var nspList = ['/test1'];
+var nspList = ['/test1', '/test2'];
 
 module.exports = (io) => {
     nspList.forEach(nsp => {
