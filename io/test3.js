@@ -36,6 +36,7 @@ async function start(socket, sdpOffer) {
     }
 
     await endPoint.connect(endPoint);
+    // 注意文件夹权限, `chown kurento:kurento /tmp/kurento`
     const recorder = await pipeline.create('RecorderEndpoint', {uri : 'file:///tmp/kurento/video' + Date.now() + '.webm'});
     await endPoint.connect(recorder);
 
