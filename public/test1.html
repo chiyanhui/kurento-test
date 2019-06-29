@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Test 1</title>
+        <script src="lib/socket.io.slim.js"></script>
+    </head>
+    <body>
+        <h1>Test 1: Kurento 环回</h1>
+        <div id="videos">
+            <video id="localVideo" autoplay muted playsinline></video>
+            <video id="remoteVideo" autoplay playsinline></video>
+        </div>
+        <script>
+            var localVideo = document.querySelector('#localVideo');
+            var remoteVideo = document.querySelector('#remoteVideo');
+            var localStream, remoteStream;
+        </script>
+        <script src="script/util.js"></script>
+        <script src="script/test1.js"></script>
+    </body>
+</html>
