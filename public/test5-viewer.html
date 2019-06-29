@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Test 5 - Viewer</title>
+        <script src="lib/socket.io.slim.js"></script>
+    </head>
+    <body>
+        <h1>Test 5: 视频接收端</h1>
+        <div id="videos">
+            <video id="remoteVideo" autoplay playsinline></video>
+        </div>
+        <script>
+            var remoteVideo = document.querySelector('#remoteVideo');
+            var localStream, remoteStream;
+        </script>
+        <script src="script/util.js"></script>
+        <script src="script/test5-viewer.js"></script>
+    </body>
+</html>
