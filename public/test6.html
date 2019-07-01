@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Test 6</title>
+        <script src="lib/socket.io.slim.js"></script>
+    </head>
+    <body>
+        <h1>Test 6: WebRTC 视频通话, Android to Web</h1>
+        <div id="videos">
+            <video id="localVideo" autoplay muted playsinline></video>
+            <video id="remoteVideo" autoplay muted playsinline></video>
+        </div>
+        <script>
+            var localVideo = document.querySelector('#localVideo');
+            var remoteVideo = document.querySelector('#remoteVideo');
+            var localStream, remoteStream;
+        </script>
+        <script src="script/test6.js"></script>
+    </body>
+</html>
